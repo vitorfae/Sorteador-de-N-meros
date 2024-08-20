@@ -15,7 +15,9 @@ function sortear(){
         numero = obterNumeroAleatorio(de, ate);
         
         while (sorteados.includes(numero)){
-            numero = obterNumeroAleatorio(de, ate)
+            numero = obterNumeroAleatorio(de, ate);
+            alert('Tentando obter número inédito');
+            return valoresZerados();
         }
         
         sorteados.push(numero);
